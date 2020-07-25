@@ -1,14 +1,9 @@
 var rn1=Math.floor(Math.random()*6)+1, rn2=Math.floor(Math.random()*6)+1;
-for(var i=1;i<=6;i++){
-  if(rn1===i){
-    document.querySelector(".img1").setAttribute("src","images/dice"+i+".png");
-  }
-}
-for(var i=1;i<=6;i++){
-  if(rn2===i){
-    document.querySelector(".img2").setAttribute("src","images/dice"+i+".png");
-  }
-}
+
+document.querySelector(".img1").setAttribute("src","images/dice"+rn1+".png");
+
+document.querySelector(".img2").setAttribute("src","images/dice"+rn2+".png");
+
 if(rn1>rn2){
   document.querySelector("h1").innerHTML="Player1 wins!🔥";
 }
